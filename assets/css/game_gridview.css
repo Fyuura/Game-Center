@@ -1,0 +1,85 @@
+.game-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 20px;
+    padding: 0 10px;
+    justify-content: flex-start; /* items sola yaslansın */
+}
+
+.game-grid-item {
+    width: 280px; /* sabit genişlik */
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    background: rgb(20, 20, 35);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.game-grid-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+.game-info {
+    padding: 10px;
+}
+
+.game-info h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.game-price {
+    margin-top: 8px;
+    font-weight: 700;
+    color: #a8ffb0;
+    text-align: center;
+}
+
+.game-price .discount-current {
+    color: #a8ffb0;
+    font-weight: 700;
+}
+.game-price .discount-original {
+    color: rgba(255,255,255,0.7);
+    margin-left: 8px;
+    text-decoration: line-through;
+    font-weight: 600;
+}
+
+.game-grid-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+.game-grid-item:focus-visible {
+    outline: 2px solid #6ea8fe;
+    outline-offset: 2px;
+}
+
+/* Responsive: ekran küçüldüğünde itemlerin sabit sayıda görünmesini koru */
+@media (max-width: 992px) {
+    .game-grid-item { width: 220px; }
+}
+
+@media (max-width: 768px) {
+    .game-grid-item { width: 180px; }
+}
+
+@media (max-width: 480px) {
+    .game-grid-item { width: 100%; } /* mobilde tek sütun */
+}

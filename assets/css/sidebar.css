@@ -1,0 +1,62 @@
+/* --- Kenar Çubuğu Ana Yapısı --- */
+.sidebar {
+    position: fixed; /* Sayfa kaysa bile yerinde sabit kalmasını sağlar */
+    left: 0;
+    top: 0;
+    width: 180px; /* Kenar çubuğu genişliği */
+    height: 100%; /* Tüm ekran yüksekliğini kaplar */
+    background-color: #1f2437; /* Koyu mavi-gri bir arka plan */
+    color: #ecf0f1; /* Açık renkli yazı */
+    display: flex; /* İçindeki elemanları (başlık, liste) esnek yönetmek için */
+    flex-direction: column; /* Elemanları alt alta sırala */
+}
+
+/* --- Başlık Alanı --- */
+.sidebar-header {
+    padding: 12px;
+    margin-top: 8px;
+}
+
+.sidebar-header img {
+    width: 100%;
+    height: auto;
+    max-width: 256px;
+    display: block;
+}
+
+/* --- Navigasyon Linkleri Listesi --- */
+.nav-links {
+    list-style: none; /* Liste başındaki noktaları kaldırır */
+    flex-grow: 1; /* Listenin kalan tüm boşluğu doldurmasını sağlar */
+}
+
+.nav-links li a {
+    display: flex; /* İkon ve yazıyı yan yana getirmek için */
+    align-items: center; /* İkon ve yazıyı dikeyde ortala */
+    color: #ecf0f1; /* Link yazı rengi */
+    text-decoration: none; /* Linklerin altındaki çizgiyi kaldır */
+    padding: 15px 20px; /* Linklerin iç boşluğu (dikey - yatay) */
+    transition: background-color 0.5s ease; /* Üzerine gelince renk değişimini yumuşatır */
+}
+
+.nav-links li a:hover {
+    background-color:  rgb(50, 55, 85); /* Fare üzerine gelince arka plan rengi */
+}
+
+/* --- Link İçindeki İkon ve Yazı Ayarları --- */
+.nav-links li a i {
+    margin-right: 15px; /* İkon ile yazı arasına boşluk koyar */
+    width: 20px; /* İkonların aynı hizada durması için sabit genişlik */
+    text-align: center;
+}
+
+/* --- Aktif Linkin Görünümü --- */
+.nav-links li a.active {
+    color: darkorange;
+    border-left: 3px solid darkorange; /* Aktif linkin soluna vurgu çizgisi */
+}
+
+/* --- Çıkış Yap Linkini Aşağı Sabitleme --- */
+.logout-link {
+    margin-top: auto; /* Kendisinden önceki elemanlarla arasını açarak en alta iter */
+}

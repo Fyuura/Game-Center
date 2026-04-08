@@ -1,0 +1,144 @@
+/* Ana Kutu */
+.form-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: rgb(40, 45, 65);
+    padding: 30px;
+    border-radius: 10px;
+    color: white;
+}
+
+.form-container h1 {
+    border-bottom: 1px solid rgb(60, 65, 85);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Form Elemanları */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+/* Fiyat Input Yan Yana Dizilimi */
+.price-inputs {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.price-inputs input {
+    padding: 10px;
+    background-color: rgb(20, 20, 35);
+    border: 2px solid rgb(20, 20, 35);
+    border-radius: 6px;
+    color: white;
+    text-align: right;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+.price-inputs input:focus {
+    border-color: darkorange;
+}
+
+/* Input Genişlikleri */
+.price-inputs .main-amount {
+    width: 140px;
+}
+
+.price-inputs .decimal-amount {
+    width: 70px;
+}
+
+.price-inputs .dot {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Mevcut Bakiye Kutusu */
+.current-balance-box {
+    background-color: rgb(20, 20, 35);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.balance-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: darkorange;
+}
+
+/* Butonlar */
+.btn-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    background-color: darkorange;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Ayarla Butonu (İçi Boş) */
+.btn-set {
+    background-color: transparent;
+    border: 2px solid darkorange;
+    color: darkorange;
+}
+
+.btn-set:hover {
+    background-color: darkorange;
+    color: white;
+}
+
+/* Sıfırla Butonu (Kırmızı) */
+.btn-reset {
+    background-color: #cf3838;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Inputlardaki Okları Gizle */
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Uyarı Mesajları */
+.alert {
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+}
+
+.alert-error {
+    background-color: #cf3838;
+}
+
+.alert-success {
+    background-color: #2ecc71;
+    color: black;
+}

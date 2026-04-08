@@ -1,0 +1,79 @@
+.view-controls {
+    display: flex;
+    justify-content: space-between;
+    /* kategori sol, toggle sağ */
+    align-items: center;
+    padding: 8px 16px;
+    margin-bottom: 10px;
+    background-color: rgb(20, 20, 35);
+    /* opsiyonel arka plan çubuğu */
+    border-radius: 8px;
+}
+
+.view-controls select {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    background-color: rgba(255, 140, 0);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.view-toggle {
+    display: flex;
+    gap: 10px;
+}
+
+.view-toggle button {
+    background-color: rgb(20, 20, 35);
+    color: white;
+    border: 2px solid transparent;
+    padding: 10px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.5s ease;
+}
+
+.view-toggle button.active {
+    border: 2px solid darkorange;
+}
+
+.view-toggle button.active i {
+    color: darkorange;
+}
+
+.view-toggle button:hover {
+    background-color: rgba(255, 140, 0, 0.5);
+}
+
+.games-general {
+    padding-bottom: 4px;
+    background-color: #1f2437;
+    border-radius: 8px;
+    margin: 32px 20px;
+    max-width: 1600px;
+}
+
+/* View toggle visibility */
+#gamesContainer .game-grid {
+    display: none;
+}
+
+#gamesContainer.list-view .game-list {
+    display: flex;
+}
+
+#gamesContainer.list-view .game-grid {
+    display: none;
+}
+
+#gamesContainer.grid-view .game-list {
+    display: none;
+}
+
+#gamesContainer.grid-view .game-grid {
+    display: flex;
+}

@@ -1,0 +1,116 @@
+/* --- Genel Reset ve Font Ayarları --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(65, 70, 90); /* Ana sayfa arka planına uyumlu */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* --- Ana Kutu --- */
+main {
+    background-color: rgb(40, 45, 65); /* auth formu arka planı */
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* --- Başlık --- */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+/* --- Form --- */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #c4c4c4;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid rgb(20, 20, 35);
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s;
+    background-color: rgb(20, 20, 35);
+    caret-color: darkorange;
+    color: white
+}
+
+input:focus {
+    border-color: darkorange;
+}
+
+/* --- Linkler --- */
+form a {
+    font-size: 0.85rem;
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+/* --- Buton --- */
+button {
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color:darkorange;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(200, 110, 1);
+}
+
+/* --- Alt linkler --- */
+p {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+
+p a {
+    color: #4a90e2;
+    font-weight: 500;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,157 @@
+.discount-section {
+    padding: 20px;
+}
+
+.discount-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: rgb(40, 45, 65);
+    border-radius: 10px;
+    color: white;
+}
+
+.discount-form h2 {
+    margin-bottom: 25px;
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid rgb(60, 65, 85);
+    padding-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+.game-title {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ccc;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(20, 20, 35);
+    border: 2px solid rgb(20, 20, 35);
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: darkorange;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.alert-success {
+    background-color: #2ecc71;
+    color: white;
+    border: 1px solid #27ae60;
+}
+
+.alert-error {
+    background-color: #cf3838;
+    color: white;
+    border: 1px solid #b93030;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-submit {
+    background-color: darkorange;
+    color: white;
+}
+
+.btn-submit:hover {
+    opacity: 0.9;
+}
+
+.btn-back {
+    background-color: transparent;
+    border: 2px solid darkorange;
+    color: darkorange;
+    text-decoration: none;
+}
+
+.btn-back:hover {
+    background-color: darkorange;
+    color: white;
+}
+
+.current-discount {
+    background-color: rgb(20, 20, 35);
+    border: 2px solid darkorange;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.current-discount h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: darkorange;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.current-discount p {
+    margin: 8px 0;
+    color: #ccc;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.hint {
+    font-size: 13px;
+    color: #999;
+    margin-top: 5px;
+}
+
+/* Hide number input arrows */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

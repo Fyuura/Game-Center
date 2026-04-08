@@ -1,0 +1,122 @@
+.form-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: rgb(40, 45, 65);
+    ;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid rgb(20, 20, 35);
+    border-radius: 6px;
+    background-color: rgb(20, 20, 35);
+    color: white;
+}
+
+.form-group textarea{
+    resize: vertical;
+    min-height: 10rem;
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: darkorange;
+    outline: none;
+    /* tarayıcının mavi çizgisini kaldırır */
+}
+
+/* Kutucukları gizle */
+.checkbox-tags input[type="checkbox"] {
+    display: none;
+}
+
+/* Tag görünümü */
+.checkbox-tags label {
+    display: inline-block;
+    background-color: rgb(20, 20, 35);
+    color: white;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Hover efekti */
+.checkbox-tags label:hover {
+    background-color: rgb(40, 45, 65);
+}
+
+/* Seçili olduğunda */
+.checkbox-tags input[type="checkbox"]:checked + label {
+    background-color: darkorange;
+    color: white;
+    font-weight: bold;
+}
+
+.price-inputs {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* inputlar arasındaki boşluk */
+}
+
+.price-inputs input {
+    width: 70px; /* her inputun genişliği */
+    padding: 10px;
+    border: 2px solid rgb(20, 20, 35);
+    border-radius: 6px;
+    background-color: rgb(20, 20, 35);
+    color: white;
+    text-align: right; /* rakamlar sağa yaslı */
+}
+
+.price-inputs .dot {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+button {
+    padding: 10px 20px;
+    background: darkorange;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(200, 110, 1);
+}
+
+/* Chrome, Edge, Safari */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

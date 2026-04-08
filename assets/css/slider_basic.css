@@ -1,0 +1,124 @@
+.slider-container {
+    max-width: 1600px;
+    margin: 20px auto;
+    position: relative;
+    background-color:  #1f2437;
+    padding: 16px 0 32px;
+    border-radius: 12px;
+}
+
+.slider-heading {
+    margin: 0 16px 16px;
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
+
+.slider-viewport {
+    overflow: hidden;
+}
+
+.slider-window {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-track {
+    display: flex;
+    align-items: flex-start;
+    transition: transform 0.35s ease;
+    will-change: transform;
+}
+
+.slider-item {
+    flex: 0 0 auto;
+    width: 300px;
+    height: 500px;
+    margin-right: 15px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f8f8f8;
+    box-shadow: none;
+}
+
+/* price badge */
+.slider-item-price {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0,0,0,0.6);
+    color: #a8ffb0;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    z-index: 12;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.slider-item-price .discount-current {
+    color: #a8ffb0;
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+/* original price when discounted */
+.slider-item-price .discount-original {
+    color: rgba(255,255,255,0.85);
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-decoration: line-through;
+}
+
+.slider-track .slider-item:last-child {
+    margin-right: 0;
+}
+
+.slider-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.slider-item-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-btn.prev { left: 10px; }
+.slider-btn.next { right: 10px; }
+
+/* scroll gerekmezse butonlar gizlensin */
+.slider-container.no-scroll .slider-btn { display: none; }
